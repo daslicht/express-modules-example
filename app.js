@@ -39,6 +39,8 @@ http.createServer(app).listen(app.get('port'), function(){
     var test2 = require('./myModules/test2');
         console.log('TEST2:', test2.doit() );
 
+    var test3 = require('./myModules/test3')('some new value for foo');
+        console.log('TEST3:', test3.doit() );
 
   console.log('Express server listening on port ' + app.get('port'));
 });
